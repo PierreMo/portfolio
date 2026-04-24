@@ -1,0 +1,109 @@
+html, body {
+    font-family: 'Orbitron-VariableFont_wght';
+}
+@font-face {
+    font-family: 'Orbitron-VariableFont_wght';
+    src: url('/fonts/Orbitron-VariableFont_wght.ttf');
+}
+*{
+    margin: 0px;
+}
+body{
+    background-color: #4cd137;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 100vw;
+    height: 100vh;
+}
+
+:root{
+    --corner: 1vh;
+    --size: 5vh;
+}
+
+nav{
+    color: white;
+    background-color: #353b48;
+    border-radius: 1vh;
+    font-size: var(--size);
+    align-items: center;
+    margin: 2%;
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#arrows{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#A1{
+    border-radius: var(--corner) 0px 0px 0px;
+}
+#A40{
+    border-radius: 0px var(--corner) 0px 0px;
+}
+#Z1{
+    border-radius: 0px 0px 0px var(--corner);
+}
+#Z40{
+    border-radius: 0px 0px var(--corner) 0px;
+}
+
+
+#reload{
+    font-family: 'Orbitron-VariableFont_wght';
+    border-radius: 5px;
+    background-color: #2f3640;
+    color: white;
+    font-size: var(--size);
+}
+mark{
+    color: #7f8fa6;
+    background-color: transparent;
+}
+
+.arrow{
+    background-color: #2f3640;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+.arrow:nth-child(1), .arrow:nth-child(3), .arrow:nth-child(5), .arrow:nth-child(7), .arrow:nth-child(9) {
+    background-color: transparent;
+    border: none;
+}
+
+.cube{
+    background-color: #353b48;
+    border: 0.1px #2f3640 solid;
+    flex: 1;
+    width: 20px;
+}
+
+.line{
+    display: flex;
+    flex: 1;
+}
+
+#grid{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+@media screen and (max-width: 1280px){
+    mark{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .arrow{
+        display: none;
+    }
+}
